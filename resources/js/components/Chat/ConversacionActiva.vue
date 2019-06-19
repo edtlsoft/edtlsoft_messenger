@@ -1,6 +1,6 @@
 <template>
     <div class="row h-100">
-        <div class="col-8">
+        <div class="col-xs-8">
             <div class="card h-100">
                 <div class="card-body card-body-scroll">
                     <mensaje 
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="col-4 pt-2">
+        <div class="col-xs-4 pt-2">
             <img :src="selectedConversation.contact_image" width="60" height="60" class="m-1 rounded-circle"> 
             <p>{{ selectedConversation.contact_name }}</p> 
             <hr> 

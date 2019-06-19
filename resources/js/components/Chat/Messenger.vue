@@ -1,15 +1,15 @@
 <template>
 	<div class="container-fluid" style="height: calc(100vh - 56px);">
 	    <div class="row h-100 no-gutters">
-	        <div class="col-4">
+	        <div class="col-xs-4">
                 
-                <contact-form-component></contact-form-component>
-                <contact-list-component></contact-list-component>
+                <formulario-contactos />
+                <listado-contactos />
                 
 	        </div>
-	        <div class="col-8">
+	        <div class="col-xs-8">
 	            
-                <active-conversation-component
+                <conversacion-activa
 	            	v-if="selectedConversation" /> 
                 
 	        </div>
@@ -19,16 +19,16 @@
 
 <script>
 
-import contactFormComponent from './ContactFormComponent.vue';
-import contactListComponent from './ContactListComponent.vue';
+import FormularioContactos from './FormularioContactos.vue';
+import ListadoContactos from './ListadoContactos.vue';
 
-import activeConversationComponent from './ActiveConversationComponent.vue';
+import ConversacionActiva from './ConversacionActiva.vue';
 
 export default {
     components: {
-        contactFormComponent,
-        contactListComponent,
-        activeConversationComponent,
+        FormularioContactos,
+        ListadoContactos,
+        ConversacionActiva,
     },
     props: {
         user: Object

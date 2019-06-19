@@ -5,11 +5,23 @@
 // Variables
 @import 'variables';
 
-// Bootstrap V-3.7
-@import '~bootstrap/scss/bootstrap'; //V-4
-//@import '~bootstrap/dist/css/bootstrap.min.css';
+
+//@import '~bootstrap/scss/bootstrap'; //V-4
+
+// Bootstrap 3.4.2
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+// Bootstrap 4 Local
+@import './bootstrap-4.css';
+
 
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+.h-100 {
+	height: 100%;
 }

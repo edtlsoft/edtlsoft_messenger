@@ -11,7 +11,7 @@ window.Vue = require('vue');
 
 // Vue Router
 import VueRouter from 'vue-router';
-import Messenger from './components/Messenger/Messenger.vue'
+import Messenger from './components/Chat/Messenger.vue'
 
 Vue.use(VueRouter);
 
@@ -24,17 +24,6 @@ const router = new VueRouter({
     routes,
     mode: 'history'
 });
-
-
-
-//Vue.component('contact-form-component', 
-//    require('./components/Messenger/ContactFormComponent.vue')
-//);
-
-
-
-
-
 
 
 
