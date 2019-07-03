@@ -1,6 +1,6 @@
 <template>
     <div class="row h-100">
-        <div class="col-xs-8">
+        <div class="col-xs-8 h-100">
             <div class="card h-100">
                 <div class="card-body card-body-scroll">
                     <mensaje 
@@ -12,15 +12,15 @@
                     </mensaje>
                 </div>
 
-                <div class="card-footer bg-light border-dark">
+                <div class="card-footer card-footer-message bg-light border-dark">
                     <div>
                         <form class="mb-0" @submit.prevent="postMessage" autocomplete="off">
-                            <div role="group" class="input-group">
-                                <input type="text" class="text-center form-control" id="inp-menssage" placeholder="Escribe un mensaje ..."  
-                                    v-model="newMessage"> 
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control text-center" placeholder="Escribe un mensaje ...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">Enviar
+                                    </button>
+                                </span>
                             </div>
                         </form>
                     </div>

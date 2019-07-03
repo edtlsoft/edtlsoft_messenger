@@ -7,7 +7,7 @@
                 <listado-contactos />
                 
 	        </div>
-	        <div class="col-xs-8">
+	        <div class="col-xs-8 h-100">
 	            
                 <conversacion-activa
 	            	v-if="selectedConversation" /> 
