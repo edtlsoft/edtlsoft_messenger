@@ -1865,6 +1865,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -64281,7 +64282,36 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._m(0)]
+                [
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.newMessage,
+                          expression: "newMessage"
+                        }
+                      ],
+                      staticClass: "form-control text-center",
+                      attrs: {
+                        type: "text",
+                        placeholder: "Escribe un mensaje ..."
+                      },
+                      domProps: { value: _vm.newMessage },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.newMessage = $event.target.value
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(0)
+                  ])
+                ]
               )
             ])
           ]
@@ -64312,19 +64342,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "input-group" }, [
-      _c("input", {
-        staticClass: "form-control text-center",
-        attrs: { type: "text", placeholder: "Escribe un mensaje ..." }
-      }),
-      _vm._v(" "),
-      _c("span", { staticClass: "input-group-btn" }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar\n                                ")]
-        )
-      ])
+    return _c("span", { staticClass: "input-group-btn" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("Enviar\n                                ")]
+      )
     ])
   },
   function() {
@@ -64557,7 +64580,7 @@ var render = function() {
     "div",
     {
       staticClass: "container-fluid",
-      staticStyle: { height: "calc(100vh - 56px)" }
+      staticStyle: { height: "calc(100vh - 75px)" }
     },
     [
       _c("div", { staticClass: "row h-100 no-gutters" }, [

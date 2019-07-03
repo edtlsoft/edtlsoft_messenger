@@ -1,5 +1,5 @@
 <template>
-	<div class="container-fluid" style="height: calc(100vh - 56px);">
+	<div class="container-fluid" style="height: calc(100vh - 75px);">
 	    <div class="row h-100 no-gutters">
 	        <div class="col-xs-4">
                 

@@ -16,7 +16,8 @@
                     <div>
                         <form class="mb-0" @submit.prevent="postMessage" autocomplete="off">
                             <div class="input-group">
-                                <input type="text" class="form-control text-center" placeholder="Escribe un mensaje ...">
+                                <input type="text" class="form-control text-center" placeholder="Escribe un mensaje ..."
+                                    v-model="newMessage">
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary" type="submit">Enviar
                                     </button>
